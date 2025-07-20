@@ -15,4 +15,4 @@ const tableschema = new mongoose.Schema({
     }
 })
 
-export default mongoose.model('table', tableschema);
+export default mongoose.model('Table', tableschema);

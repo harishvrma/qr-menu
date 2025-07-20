@@ -1,4 +1,4 @@
-import table from "../models/table.js";
+import Table from "../models/table.js";
 import { generateQRCode } from "../utils/generateQr.js";
 const frontendBaseURL = 'https://fastidious-caramel-82ddf6.netlify.app/'
 export const createTable = async (req, res) => {
@@ -7,7 +7,7 @@ export const createTable = async (req, res) => {
         const qrData = `${frontendBaseURL}/table/${tableNumber}`;
         const qrCodeUrl = await generateQRCode(qrData);
 
-        const newtable = new table({tableNumber, qrCodeUrl});
+        const newtable = new Table({tableNumber, qrCodeUrl});
         await newtable.save();
         
         res.status(201).json(newtable);

@@ -1,6 +1,6 @@
 import table from "../models/table.js";
 import { generateQRCode } from "../utils/generateQr.js";
-const frontendBaseURL = 'https://fastidious-caramel-82ddf6.netlify.app/'
+const frontendBaseURL = 'https://fastidious-caramel-82ddf6.netlify.app/admin/'
 export const createTable = async (req, res) => {
     try {
         const {tableNumber} = req.body;

@@ -1,6 +1,6 @@
 import table from "../models/table.js";
 import { generateQRCode } from "../utils/generateQr.js";
-const frontendBaseURL = 'http://localhost:5173';
+const frontendBaseURL = 'https://aesthetic-sherbet-d4e854.netlify.app/';
 
 export const createTable = async (req, res) => {
     try {

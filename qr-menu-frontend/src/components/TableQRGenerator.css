@@ -1,0 +1,45 @@
+.qr-generator {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .qr-generator h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .qr-generator input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .qr-generator button {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .qr-generator button:hover {
+    background-color: #0056b3;
+  }
+  
+  .qr-preview {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .qr-preview img {
+    width: 200px;
+    height: 200px;
+  }
+  

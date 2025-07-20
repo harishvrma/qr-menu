@@ -1,4 +1,4 @@
-// File: src/App.jsx
+
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import TableQRGenerator from './components/TableQRGenerator';
 import TableMenuPage from './pages/TableMenuPage';

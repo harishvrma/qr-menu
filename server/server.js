@@ -12,9 +12,9 @@ import menuRoutes from './routes/menuRoutes.js';
 dotenv.config();
 
 app.use(cors({
-  origin: ['https://fastidious-caramel-82ddf6.netlify.app'],
+  origin: ['http://localhost:5173', 'https://fastidious-caramel-82ddf6.netlify.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  credentials: true // only if you're using cookies/sessions
 }));
 app.use(express.json());
 mongoose.connect('mongodb://localhost:27017/qrmenu', {

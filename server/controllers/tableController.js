@@ -1,6 +1,6 @@
 import Table from "../models/table.js";
 import { generateQRCode } from "../utils/generateQr.js";
-const frontendBaseURL = 'https://fastidious-caramel-82ddf6.netlify.app/'
+const frontendBaseURL = 'https://fastidious-caramel-82ddf6.netlify.app'
 export const createTable = async (req, res) => {
     try {
         const {tableNumber} = req.body;
@@ -12,6 +12,7 @@ export const createTable = async (req, res) => {
         
         res.status(201).json(newtable);
     } catch (error) {
-        res.status(500).json({error:error.message})
+        console.error("❌ Error in createTable:", error);
+        res.status(500).json({ error: error.message });
     }
 };
